@@ -1,0 +1,14 @@
+def build_tree_top (tree_round,tree_height,leg_width):
+    
+    stars = 1
+
+    while tree_round > 0:
+        print(" "*tree_round+"*"*stars)
+        stars = stars+2
+        tree_round = tree_round-1
+
+    while tree_height > 0:
+        print(" "*((stars-leg_width)//2)+"*"*leg_width)
+        tree_height = tree_height-1
+
+build_tree_top(10,7,3)
